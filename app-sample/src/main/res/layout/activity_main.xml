@@ -1,17 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<com.github.saadfarooq.ScrollingTrailerLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context=".MainActivity">
+    android:layout_height="wrap_content">
 
-    <TextView
-        android:text="Hello World!"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-</RelativeLayout>
+    <FrameLayout
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+        <!--<TextView-->
+            <!--android:text="Hero"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"/>-->
+    </FrameLayout>
+
+    <FrameLayout
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+        <TextView
+            android:text="Trailer"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </FrameLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:gravity="center"
+                android:text="Item"
+                android:textSize="24sp"
+                android:background="@color/colorAccent"
+                android:layout_margin="4dp"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"/>
+
+            <TextView
+                android:gravity="center"
+                android:text="Item"
+                android:textSize="24sp"
+                android:background="@color/colorAccent"
+                android:layout_margin="4dp"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"/>
+
+            <TextView
+                android:gravity="center"
+                android:text="Item"
+                android:textSize="24sp"
+                android:background="@color/colorAccent"
+                android:layout_margin="4dp"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"/>
+
+            <TextView
+                android:gravity="center"
+                android:text="Item"
+                android:textSize="24sp"
+                android:background="@color/colorAccent"
+                android:layout_margin="4dp"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"/>
+
+
+            <TextView
+                android:gravity="center"
+                android:text="Item"
+                android:textSize="24sp"
+                android:background="@color/colorAccent"
+                android:layout_margin="4dp"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"/>
+
+            <TextView
+                android:gravity="center"
+                android:text="Item"
+                android:textSize="24sp"
+                android:background="@color/colorAccent"
+                android:layout_margin="4dp"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"/>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</com.github.saadfarooq.ScrollingTrailerLayout>
