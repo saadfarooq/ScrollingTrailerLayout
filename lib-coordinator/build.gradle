@@ -22,5 +22,6 @@ android {
 commonDeps {
     support {
         support true
+        design true
     }
 }
